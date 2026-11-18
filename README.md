@@ -13,6 +13,7 @@ Azure-Automation-Runbooks (PowerShell 7.6), die nach dem täglichen PUPIL-Sync S
 | Status | aktiv |
 | Genutzt von | Schule Rorschacherberg, Schuleinheiten Klosterguet, Steig, Wildenstein (siehe [Handbuch: schulen.md](https://github.com/danielzoller20/idrr-handbuch/blob/main/uebersicht/schulen.md)) |
 | Hosting | Azure Automation, Ressourcengruppe `UserAutomation` (Subscription, Region: TODO) |
+| Offene Punkte | **[offene-punkte.md](offene-punkte.md)**: Review-Befunde und Lücken, die noch umgesetzt werden müssen |
 
 ## Runbooks
 

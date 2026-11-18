@@ -32,6 +32,7 @@ runbooks/
   StudentPolicies/Set-StudentPassword.ps1
   TeamsCalling/Sync-EntraBusinessPhonesToTeams.ps1
 docs/betrieb.md        Konfiguration, Mitteilungen, Logging, Berechtigungen, Fehlerbehebung
+offene-punkte.md       Was noch überarbeitet werden muss (Nummern A1 …)
 ```
 
 ## Regeln für dieses Repo
@@ -39,6 +40,7 @@ docs/betrieb.md        Konfiguration, Mitteilungen, Logging, Berechtigungen, Feh
 - Runbooks nie gegen den produktiven Tenant ausführen. Änderungen nur im Code, Ausführung macht ein Mensch.
 - Ändert sich ein Wert im Konfigurationsblock, `docs/betrieb.md` und ggf. `README.md` im selben Commit nachführen.
 - Graph-Berechtigungen und Entra-Rollen nicht erweitern ohne Rückfrage.
+- `offene-punkte.md` vor grösseren Änderungen lesen; erledigte Punkte im selben Commit entfernen, neue Befunde eintragen.
 - Passwörter dürfen nie in Logs oder technische Mails gelangen.
 - Neue Einträge in Ignore-Listen oder Mailempfänger nur auf ausdrückliche Anweisung.
 - Betrifft eine Änderung Übergreifendes (PUPIL-Attribute, dynamische Gruppen, Zuständigkeiten), Handbuch `idrr-handbuch` (`uebersicht/pupil-m365.md`) anpassen.
