@@ -4,7 +4,7 @@ Was in diesem Repo noch überarbeitet, ergänzt oder entschieden werden muss.
 
 Priorität: **Hoch** = Risiko für Betrieb, Sicherheit oder Datenschutz · **Mittel** = Fehlverhalten oder Lücke im Betrieb · **Niedrig** = Kosmetik, Konsistenz, Doku.
 
-Regel und Format: Handbuch [`konventionen/offene-punkte.md`](https://github.com/danielzoller20/idrr-handbuch/blob/main/konventionen/offene-punkte.md) (Entscheid 0004). Erledigte Punkte werden im selben Pull Request entfernt.
+Regel und Format: Handbuch [`konventionen/offene-punkte.md`](https://github.com/danielzoller20/idrr-handbuch/blob/main/konventionen/offene-punkte.md) (Entscheid 0004). Erledigte Punkte werden im selben Pull Request entfernt. Jede Änderung hier wird auch in der [Gesamtübersicht](https://github.com/danielzoller20/idrr-handbuch/blob/main/offene-punkte-gesamt.md) im Handbuch nachgeführt.
 
 Stand: 18.11.2026
 
