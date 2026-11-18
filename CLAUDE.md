@@ -1,6 +1,8 @@
 # CLAUDE.md – IDRR Azure Automation
 
-> Ergänzt die gemeinsamen Regeln aus `~/schulverbund/CLAUDE.md` (Handbuch: `claude/CLAUDE.shared.md`).
+> Gemeinsame Regeln aller IDRR-Repos, eingebunden aus dem Handbuch (Repo `idrr-handbuch` muss daneben liegen):
+
+@../idrr-handbuch/claude/CLAUDE.shared.md
 
 ## Was dieses Tool tut
 
