@@ -107,7 +107,7 @@ Läuft täglich um 06:10. `businessPhones` in Entra ist die führende Quelle. Gl
 ### Verhalten in Sonderfällen
 
 - `businessPhones` leer → bestehende, verwaltete Direct-Routing-Nummer wird entfernt, Calling- und Voice-Routing-Policy auf Vererbung zurückgesetzt.
-- Deaktivierte oder unlizenzierte Benutzer werden übersprungen. **Ihre Nummer bleibt in Teams zugewiesen**, bis sie einem anderen Benutzer zugewiesen und dabei verschoben wird.
+- Deaktivierte oder unlizenzierte Benutzer werden übersprungen; eine bestehende Nummer bleibt bis dahin zugewiesen. Konten austretender Mitarbeitender werden gelöscht, damit wird die Nummer frei.
 - Nummer ist bei einem anderen Benutzer zugewiesen → Verschiebung, ausser der bisherige Inhaber ist geschützt (Ignore-Liste, Exclude-Regel, keine Include-Regel, kein Benutzer, z. B. Resource Account). Dann Fehler, keine Änderung.
 - Nach jeder Zuweisung oder Entfernung wird der Teams-Status bis zu 4 × im Abstand von 10 s geprüft. Schlägt eine Verschiebung fehl, wird die vorherige Zuweisung wenn möglich wiederhergestellt.
 
@@ -116,7 +116,7 @@ Läuft täglich um 06:10. `businessPhones` in Entra ist die führende Quelle. Gl
 | Mitteilung | Empfänger (Variable) | Inhalt / Auslöser |
 |---|---|---|
 | Support- und Änderungsmail | 2nd-Level-Support (`$LogSupportMail`) | Bei Fehlern, reservierten Nummern, optional bei Warnungen, bei `Debug` und Änderungen. Neue Vergaben, Änderungen, Löschungen, Hinweise; Log im Anhang. |
-| Doppelte Telefonnummer | Schulverwaltung (`$PhoneConflictMail`), CC `$LogSupportMail` | Separate Konfliktmail. Keine Änderung für betroffene Benutzer. Korrektur in PUPIL. |
+| Doppelte Telefonnummer | Schulverwaltung (`$PhoneConflictMail`, eigene Domain `rorschacherberg.ch`, gewollt), CC `$LogSupportMail` | Separate Konfliktmail. Keine Änderung für betroffene Benutzer. Korrektur in PUPIL. |
 | Reservierte Telefonnummer | Schulverwaltung (`$PhoneConflictMail`), CC `$LogSupportMail` | Separate Konfliktmail. Keine Änderung für betroffene Benutzer. Korrektur in PUPIL. |
 
 ### Logging
