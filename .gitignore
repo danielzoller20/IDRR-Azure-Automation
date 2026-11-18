@@ -1,0 +1,49 @@
+# --- Secrets und lokale Konfiguration (nie committen) ---
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+secrets.json
+local.settings.json
+appsettings.*.local.json
+
+# --- Betriebssystem ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editoren ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+
+# --- Claude Code (lokale Einstellungen) ---
+.claude/settings.local.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Node ---
+node_modules/
+dist/
+
+# --- .NET ---
+bin/
+obj/
+
+# --- PowerShell / Intune ---
+*.intunewin
+Output/
+
+# --- Logs und Exporte (können Personendaten enthalten) ---
+*.log
+logs/
+export/
