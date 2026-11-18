@@ -25,7 +25,6 @@ Quelle der Befunde: Review vom 18.11.2026 (statische Prüfung, nichts ausgeführ
 | Nr. | Prio | Was | Betrifft | Art der Änderung |
 |---|---|---|---|---|
 | A4 | Hoch | Keine Notbremse bei Massenänderungen. Liefert PUPIL leere Werte, werden alle SuS ohne Klasse deaktiviert bzw. allen Mitarbeitenden die Nummer entfernt. Schwellwert einbauen (z. B. > 10 Aktionen oder > 5 % des Bestands → Abbruch, nur Supportmail). | beide Runbooks | Code |
-| A5 | Mittel | Deaktivierte und unlizenzierte Mitarbeitende behalten ihre Direct-Routing-Nummer, bis sie neu vergeben wird. Gelöschte Inhaber erzeugen täglich einen Konfliktfehler. Nummer freigeben oder mindestens in der Supportmail ausweisen. | `Sync-EntraBusinessPhonesToTeams` | Code |
 | A6 | Mittel | Schlägt der Verarbeitungsstempel nach dem Mailversand fehl, erzeugt der nächste Lauf ein zweites Passwort; das gemailte erste gilt nicht mehr. | `Set-StudentPassword` | Code oder Doku |
 | A7 | Mittel | Schlägt die Sammelmail fehl, werden reaktivierte Konten beim nächsten Lauf nicht erneut gemeldet. | `Set-StudentPassword` | Code |
 | A8 | Mittel | Nummern ausserhalb des erlaubten Bereichs erzeugen bei jedem Lauf einen ERROR und eine FEHLER-Mail (Daueralarm). Als Hinweis behandeln oder per Exclude-Regel ausschliessen. | `Sync-EntraBusinessPhonesToTeams` | Code oder Konfiguration |
@@ -42,7 +41,6 @@ Quelle der Befunde: Review vom 18.11.2026 (statische Prüfung, nichts ausgeführ
 | Nr. | Prio | Was |
 |---|---|---|
 | A16 | Mittel | Fachliche Mailempfänger sind persönliche Postfächer. Bei Abwesenheit oder Austritt gehen Passwörter und Fehlermeldungen verloren. Funktionspostfächer oder Verteilergruppen einsetzen? |
-| A17 | Mittel | `$PhoneConflictMail = schulverwaltung@rorschacherberg.ch` hat eine andere Domain als alle anderen Adressen (`schule-rorschacherberg.ch`). Gewollt? |
 | A18 | Mittel | Beide Runbooks laufen produktiv mit `$Debug = $true`. Gewollter Normalzustand? |
 | A19 | Niedrig | Initialpasswort (Muster `ULLDDDDLLU`, rund 39 Bit) gilt dauerhaft (`ForceChangePasswordNextSignIn = $false`, kein Ablauf). Bewusst so lassen? Entscheid festhalten. |
 | A20 | Niedrig | Kommentar in `Sync-EntraBusinessPhonesToTeams` nennt eine Person mit Namen. Durch Funktion ersetzen. |
